@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Degree {
+            padding: 5px;
+            text-align: left;
+        }
+        * {
+            font-weight: bold;
+        }
+        body {
+            background-color: rgba(238, 77, 13, 0.945);
+            color: rgb(255, 250, 250);
+        }
+        form {
+            margin: 0 auto;
+            width: 40%;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            border-left: transparent;
+            border-right: transparent;
+            border-style: double;
+            border-radius: 15px;
+            height: auto;
+            font-size: 15px;
+            margin-top: 4%;
+            font-weight: bold;
+        }
+        h2 {
+            margin-top: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 35%;
+            margin-top: 20px;
+            margin: 15px;
+            border: hidden;
+        }
+        input {
+            padding: 5px;
+            border: hidden;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-left: 2px;
+            border-radius: 3px;
+            padding: 8px;
+            width: 35%;
+            color: rgb(248, 89, 16);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: hidden;
+        }
+
+        .btn {
+            text-align: right;
+            margin-right: 35px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <form class="form-horizontal">
+            <h2>Create Your Account</h2>
+            <div>
+                <label for="name">Enter Name : </label>
+                <input type="text" placeholder="Enter user here">
+            </div>
+            <div>
+                <label for="email">Enter Email : </label>
+                <input type="email" placeholder="Enter Email ID here">
+            </div>
+            <div>
+                <label for="Age">Age : </label>
+                <input type="number" size="6" name="Age" min="1" max="100" placeholder="Age">
+            </div>
+            <div>
+                <label for="Birthdate">Birthdate :</label>
+                <input type="date">
+            </div>
+            <div>
+                <label for="Degree">Graduated in :</label>
+                <select id="Degree" style="width: 190px;">
+                    <option value="" disabled selected hidden>Degree</option>
+                    <option value="B.E">B.E</option>
+                    <option value="">B.Tech</option>
+                    <option value="opel">BCA</option>
+                    <option value="audi">B.Arch</option>
+                </select>
+            </div>
+            <div>
+                <label for="Phone">Phone :</label>
+                <input type="tel" id="Phone" name="Phone" pattern="[7-9]{1}[0-9]{5}[0-9]{4}" placeholder="Phone">
+            </div>
+            <div>
+                <label for="Enter username here">Enter User Name :</label>
+                <input type="text" placeholder="Enter username here">
+            </div>
+            <div>
+                <label for="Enter password here">Enter Password :</label>
+                <input type="password" placeholder="Enter password here" id="password" required>
+            </div>
+            <div>
+                <label for="Enter password here">Enter Confirm Password :</label>
+                <input type="password" placeholder="Enter password here" id="password" required>
+            </div>
+            <div class="btn">
+                <button style="width: 133px;">Clear Form</button>
+                <button style="width: 133px;">Create Account</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
